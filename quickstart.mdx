@@ -1,0 +1,93 @@
+---
+title: Quickstart Guide
+description: Get up and running with the trading system or AIMS tools in just a few minutes.
+---
+
+## Prerequisites
+
+<Callout kind="info">
+Before you begin, ensure you have a funded trading account on MT4 or MT5 and access to the members area. You will also need the latest version of the platform installed on your computer.
+</Callout>
+
+## Account Setup and Login
+
+Follow these steps to create your account and access the tools.
+
+<Steps>
+<Step title="Create Your Account" icon="user-plus">
+Visit the official registration page and complete the signup form with your email and basic details. You will receive a confirmation link within minutes.
+</Step>
+<Step title="Verify and Login" icon="log-in">
+Check your email for the verification message, then head to the members portal at `https://my.itradeaims.net/`. Enter your credentials to access the dashboard.
+</Step>
+<Step title="Download Resources" icon="download">
+Once logged in, navigate to the downloads section and select the package matching your platform (MT4 or MT5).
+</Step>
+</Steps>
+
+## Installing MT4/MT5 Tools
+
+Install the indicators and expert advisors using the platform's built-in file manager.
+
+<Tabs>
+<Tab title="MT4" icon="monitor">
+````bash
+# Copy the downloaded .ex4 and .dll files
+# Navigate to File > Open Data Folder in MT4
+# Paste files into MQL4/Indicators and MQL4/Experts folders
+# Restart the platform to load the tools
+````
+</Tab>
+<Tab title="MT5" icon="monitor">
+````bash
+# Copy the downloaded .ex5 and .dll files
+# Navigate to File > Open Data Folder in MT5
+# Paste files into MQL5/Indicators and MQL5/Experts folders
+# Restart the platform to load the tools
+````
+</Tab>
+</Tabs>
+
+## First Trade Walkthrough
+
+<Steps>
+<Step title="Attach the Indicator" icon="bar-chart">
+Open a chart for your preferred market (Forex, Indices, or Crypto). Drag the Banana Indicator or AIMS Algo from the Navigator panel onto the chart.
+</Step>
+<Step title="Apply Basic Settings" icon="settings">
+Right-click the indicator and set the timeframe to match your strategy. Enable alerts for entry signals.
+</Step>
+<Step title="Execute the Trade" icon="play">
+When a clear signal appears, place your order with the recommended lot size and stop-loss levels shown on the chart.
+</Step>
+</Steps>
+
+## Basic Configuration Steps
+
+Configure your risk parameters in the tool settings panel. Use the following example configuration for a conservative approach:
+
+```json
+{
+  "riskPerTrade": 1.0,
+  "maxDailyLoss": 3.0,
+  "alertSound": true,
+  "autoLotSize": false
+}
+```
+
+<Callout kind="tip">
+Always test your configuration in a demo account first. Adjust the `riskPerTrade` value based on your account size and risk tolerance.
+</Callout>
+
+## Next Steps
+
+Explore more advanced features and detailed strategy guides.
+
+<Columns cols={2}>
+<Card title="Trading System" icon="book-open" href="/trading-system" horizontal>
+Learn the complete AIMS methodology with video modules and psychology training.
+</Card>
+<Card title="AIMS Tools" icon="tool" href="/tools" horizontal>
+Browse the full collection of indicators, EAs, and bots for automated trading.
+</Card>
+</Columns>
